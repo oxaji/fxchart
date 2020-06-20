@@ -11,6 +11,8 @@
         =image_tag("https://www.photolibrary.jp/mhd3/img683/450-2019032616412746325.jpg", size: "70x60")
       .title
         =link_to "fxchart","/"
+      .new__chart
+        =link_to "投稿", "/charts/new"
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
     = yield

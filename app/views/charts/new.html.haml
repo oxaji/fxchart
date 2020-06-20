@@ -1,0 +1,11 @@
+.new
+  =form_with(model:@chart, local:true) do |form|
+    投稿する
+    .chart__name
+    =form.text_field :name, placeholder:"タイトル"
+    .chart__img
+    =form.text_field :image, placeholder:"画像のURL"
+    .chart__text
+    =form.text_field :text, placeholder:"説明文"
+    .submit
+    =form.submit "投稿"
