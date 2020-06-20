@@ -15,3 +15,11 @@
       =link_to "Profile", "#"
   .charts
     .chart
+      - @charts.each do |chart|
+        .a
+          .chart__name
+            =chart.name
+          .chart__img
+            =image_tag chart.image
+          .chart__text
+            =chart.text

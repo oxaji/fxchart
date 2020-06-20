@@ -64,3 +64,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 #haml
 gem 'haml-rails'
 gem 'erb2haml'
+
+#写真アップロード
+gem 'carrierwave'
+gem 'rmagick'
