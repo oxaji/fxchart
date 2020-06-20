@@ -1,7 +1,7 @@
 class ToppageController < ApplicationController
 
   def index
-    @charts = Chart.all
+    @charts = Chart.all.page(params[:page]).per(4)
   end
 
   def new

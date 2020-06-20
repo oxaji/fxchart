@@ -68,3 +68,6 @@ gem 'erb2haml'
 #写真アップロード
 gem 'carrierwave'
 gem 'rmagick'
+
+#ページネーション
+gem 'kaminari'

@@ -8,6 +8,8 @@ class ChartsController < ApplicationController
     Chart.create(chart_params)
   end
 
+
+
   private
   def chart_params
     params.require(:chart).permit(:name,:image,:text)

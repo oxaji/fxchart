@@ -117,11 +117,14 @@
       color: turquoise;
     }
   }
-  .charts{
+  .charts{ 
     .chart{
       display: flex;
+      flex-wrap:  wrap;
       .a{
         margin-right: 50px;
+        margin-left: 20px;
+        margin-bottom: 20px;
         .chart__name{
           text-align: center;
           font-weight: 700;

@@ -20,6 +20,7 @@
           .chart__name
             =chart.name
           .chart__img
-            =image_tag chart.image
+            =image_tag chart.image,size:'400x300'
           .chart__text
             =chart.text
+= paginate @charts
