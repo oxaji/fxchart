@@ -1,3 +1,4 @@
 Rails.application.routes.draw do
-  resorses 
+  root to: "toppage#index"
+  resources :charts, only: [:new, :create]
 end

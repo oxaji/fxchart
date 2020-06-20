@@ -1,0 +1,26 @@
+.content
+  .box 
+    .wave.-one 
+    .wave.-two
+    .wave.-three
+    .title FXchartへようこそ
+  .menu
+    .menu__home
+      =link_to "Home","#"
+    .menu__ranking
+      =link_to "Ranking", "#"
+    .menu__guide
+      =link_to "Guide", "#"
+    .menu__profile
+      =link_to "Profile", "#"
+  .charts
+    .chart
+      - @charts.each do |chart|
+        .a
+          .chart__name
+            =chart.name
+          .chart__img
+            =image_tag chart.image,size:'400x300'
+          .chart__text
+            =chart.text
+= paginate @charts
