@@ -7,5 +7,7 @@
     =form.text_field :image, placeholder:"画像のURL"
     .chart__text
     =form.text_field :text, placeholder:"説明文"
+    =check_box_tag :sample
+    =label_tag :sample, 'チェックボックス'
     .submit
     =form.submit "投稿"

@@ -1,11 +1,7 @@
 class Chart < ApplicationRecord
 
   def check_image
-    if !['.jpg', '.png', '.gif'].include?(File.extname(name).downcase)
-        errors.add(:image, "JPG, PNG, GIFのみアップロードできます。")
-    elsif file.size > 1.megabyte
-        errors.add(:image, "1MBまでアップロードできます")
-    end
+     !['.jpg', '.png', '.gif'].include?(File.extname(name).downcase)
   end
 
   validate :check_image
