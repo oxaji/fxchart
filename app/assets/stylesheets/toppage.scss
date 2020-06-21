@@ -10,6 +10,7 @@
     padding: 0.5em 0.5em 0.5em 2.0em;
     border-bottom: 2px solid #B92A2C;
     margin-top: 12px;
+    text-shadow: #FC0 1px 0 10px;
     a{
       text-decoration: none;
       color: skyblue;
@@ -56,6 +57,7 @@
     display: none;
     position: absolute;
     right: 140px;
+    font-size: 10px;
 
   }
   .new__chart:hover + .fukidashi{
@@ -149,7 +151,7 @@
       display: flex;
       flex-wrap:  wrap;
       .a{
-        margin-right: 50px;
+        margin-right: 30px;
         margin-left: 20px;
         margin-bottom: 20px;
         .chart__name{
@@ -182,6 +184,80 @@
         }
       }
 
+    }
+  }
+}
+
+.fooder{
+  .line{
+    margin-top: 30px;
+    border: solid 20px #9ccfd3;
+  }
+  .content{
+    .titles{
+      display: flex;
+      height: 70px;
+      width: 200px;
+      margin-top: 25px;
+      .title{
+        position: relative;
+        font-size: 1.143em;
+        font-weight: bold;
+        padding: 0.5em 0.5em 0.5em 2.0em;
+        border-bottom: 2px solid #B92A2C;
+        line-height: 86px;
+        text-shadow: #FC0 1px 0 10px;
+
+        a{
+          text-decoration: none;
+          color: skyblue;
+        }
+      }
+      .title:before{
+        content: "□";
+        font-size: 200%;
+        position: absolute;
+        color: #ff6b6e;
+        top: -0.8em;
+        left: 0.3em;
+        height: 12px;
+        width: 12px;
+    }
+      .title:after{
+        content: "□";
+        font-size: 200%;
+        position: absolute;
+        color: #B92A2C;
+        top: -0.5em;
+        left: 0;
+        height: 12px;
+        width: 12px;
+      }
+  }
+    .copy{
+      font-size: 10px;
+      color: #505050;
+      text-align: center;
+    }
+  }
+  .homeranking{
+    display: flex;
+    text-align: center;
+    .home{
+      width: 50%;
+    }
+    .ranking{
+      width: 50%;
+    }
+  }
+  .guideprofile{
+    display: flex;
+    text-align: center;
+    .guide{
+      width: 50%;
+    }
+    .profile{
+      width: 50%;
     }
   }
 }
