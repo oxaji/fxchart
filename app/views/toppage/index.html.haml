@@ -18,9 +18,9 @@
       - @charts.each do |chart|
         .a
           .chart__name
-            =chart.name
+            =link_to chart.name, "/charts/#{chart[:id]}"
           .chart__img
-            =image_tag chart.image,size:'400x300'
+            =link_to image_tag(chart.image, size:'400x300'),"/charts/#{chart[:id]}"
           .chart__text
             =chart.text
 = paginate @charts

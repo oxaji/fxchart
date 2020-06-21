@@ -8,7 +8,9 @@ class ChartsController < ApplicationController
     Chart.create(chart_params)
   end
 
-
+  def show
+    @chart = Chart.find(params[:id])
+  end
 
   private
   def chart_params
