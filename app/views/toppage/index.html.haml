@@ -23,4 +23,6 @@
             =link_to image_tag(chart.image, size:'400x300'),"/charts/#{chart[:id]}"
           .chart__text
             =chart.text
+          .winlose
+            =chart.winlose
 = paginate @charts

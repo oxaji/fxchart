@@ -2,12 +2,15 @@
   =form_with(model:@chart, local:true) do |form|
     投稿する
     .chart__name
-    =form.text_field :name, placeholder:"タイトル"
+      =form.text_field :name, placeholder:"タイトル"
     .chart__img
-    =form.text_field :image, placeholder:"画像のURL"
+      =form.text_field :image, placeholder:"画像のURL"
     .chart__text
-    =form.text_field :text, placeholder:"説明文"
-    =check_box_tag :sample
-    =label_tag :sample, 'チェックボックス'
+      =form.text_field :text, placeholder:"説明文"
+    .winlose
+      =form.radio_button :winlose, :１
+      =form.label :勝った, class: "winlose"
+      =form.radio_button :winlose, :２
+      =form.label :負けた, class: "winlose"
     .submit
-    =form.submit "投稿"
+      =form.submit "投稿"

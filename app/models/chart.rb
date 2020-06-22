@@ -7,4 +7,10 @@ class Chart < ApplicationRecord
   validate :check_image
   validates :name, presence: true
   validates :text, presence: true
+
+  enum winlose: {
+    勝った:1, 負けた:2
+  }
+
+
 end
