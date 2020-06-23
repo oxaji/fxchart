@@ -8,11 +8,13 @@
     .chart__text
       =form.text_field :text, placeholder:"説明文"
     .winlose
+      勝った？負けた？
       =form.radio_button :winlose, :'勝った'
       =form.label :勝った, class: "winlose"
       =form.radio_button :winlose, :'負けた'
       =form.label :負けた, class: "winlose"
     .style
+      保有時間
       =form.radio_button :style, :"スキャルピング"
       =form.label :スキャルピング, class: "style"
       =form.radio_button :style, :"デイトレード"
@@ -21,5 +23,72 @@
       =form.label :スイングトレード, class: "style"
       =form.radio_button :style, :"長期保有"
       =form.label :長期保有, class: "style"
+    .timefoot
+      時間足
+      =form.radio_button :timefoot, :"1分足"
+      =form.label :１分足, class: "　timefoot"
+      =form.radio_button :timefoot, :"3分足"
+      =form.label :３分足, class: "　timefoot"
+      =form.radio_button :timefoot, :"5分足"
+      =form.label :５分足, class: "　timefoot"
+      =form.radio_button :timefoot, :"10分足"
+      =form.label :１０分足, class: "　timefoot"
+      =form.radio_button :timefoot, :"15分足"
+      =form.label :１５分足, class: "　timefoot"
+      =form.radio_button :timefoot, :"30分足"
+      =form.label :３０分足, class: "　timefoot"
+      =form.radio_button :timefoot, :"1時間足"
+      =form.label :１時間足, class: "　timefoot"
+      =form.radio_button :timefoot, :"4時間足"
+      =form.label :４時間足, class: "　timefoot"
+      =form.radio_button :timefoot, :"日足"
+      =form.label :日足, class: "　timefoot"
+      =form.radio_button :timefoot, :"週足"
+      =form.label :週足, class: "　timefoot"
+      =form.radio_button :timefoot, :"月足"
+      =form.label :月足, class: "　timefoot"     
+
+    .pair
+      通過ペア
+      =form.radio_button :pair, :"米ドル/円"
+      =form.label :米ドル／円, class: "pair"
+      =form.radio_button :pair, :"ユーロ/円"
+      =form.label :ユーロ／円, class: "pair" 
+      =form.radio_button :pair, :"ポンド/円"
+      =form.label :ポンド／円, class: "pair" 
+      =form.radio_button :pair, :"豪ドル/円"
+      =form.label :豪ドル／円, class: "pair" 
+      =form.radio_button :pair, :"NZドル/円"
+      =form.label :NZドル／円, class: "pair" 
+      =form.radio_button :pair, :"カナダドル/円"
+      =form.label :カナダドル／円, class: "pair" 
+      =form.radio_button :pair, :"スイスフラン/円"
+      =form.label :スイスフラン／円, class: "pair" 
+      =form.radio_button :pair, :"ユーロ/米ドル"
+      =form.label :ユーロ／米ドル, class: "pair" 
+      =form.radio_button :pair, :"ポンド/米ドル"
+      =form.label :ポンド／米ドル, class: "pair" 
+      =form.radio_button :pair, :"豪ドル/米ドル"
+      =form.label :豪ドル／米ドル, class: "pair" 
+      =form.radio_button :pair, :"NZドル/米ドル"
+      =form.label :NZドル／米ドル, class: "pair" 
+      =form.radio_button :pair, :"カナダドル/米ドル"
+      =form.label :カナダドル／米ドル, class: "pair" 
+      =form.radio_button :pair, :"ユーロ/ポンド"
+      =form.label :ユーロ／ポンド, class: "pair" 
+      =form.radio_button :pair, :"ユーロ/豪ドル"
+      =form.label :ユーロ／豪ドル, class: "pair" 
+      =form.radio_button :pair, :"ユーロ/NZドル"
+      =form.label :ユーロ／NZドル, class: "pair" 
+      =form.radio_button :pair, :"ユーロ/スイスフラン"
+      =form.label :ユーロ／スイスフラン, class: "pair" 
+      =form.radio_button :pair, :"豪ドル/NZドル"
+      =form.label :豪ドル／NZドル, class: "pair" 
+      =form.radio_button :pair, :"その他通過ペア"
+      =form.label :その他通過ペア, class: "pair" 
+    .analyze
+      =form.text_field :analyze, placeholder:"主な手法"
+    .profit
+      =form.text_field :profit, placeholder:"利益・損失"
     .submit
       =form.submit "投稿"

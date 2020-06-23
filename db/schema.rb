@@ -19,6 +19,10 @@ ActiveRecord::Schema.define(version: 2020_06_19_083901) do
     t.integer "user_id"
     t.integer "winlose"
     t.integer "style"
+    t.integer "timefoot"
+    t.integer "pair"
+    t.text "analyze"
+    t.text "profit"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
