@@ -5,7 +5,8 @@ class CreateCharts < ActiveRecord::Migration[5.2]
       t.text :text
       t.text :image
       t.integer :user_id
-      t.integer :winlose, defalut: 0
+      t.integer :winlose
+      t.integer :style 
       t.timestamps
     end
   end

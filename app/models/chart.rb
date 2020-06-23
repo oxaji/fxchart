@@ -9,8 +9,11 @@ class Chart < ApplicationRecord
   validates :text, presence: true
 
   enum winlose: {
-    勝った:1, 負けた:2
-  }
+    "勝った":1, "負けた":2
+  },_suffix: true
 
+  enum style: {
+    "スキャルピング":1,"デイトレード":2,"スイングトレード":3,"長期保有":4
+  },_suffix: true
 
 end

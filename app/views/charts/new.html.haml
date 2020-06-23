@@ -8,9 +8,18 @@
     .chart__text
       =form.text_field :text, placeholder:"説明文"
     .winlose
-      =form.radio_button :winlose, :１
+      =form.radio_button :winlose, :'勝った'
       =form.label :勝った, class: "winlose"
-      =form.radio_button :winlose, :２
+      =form.radio_button :winlose, :'負けた'
       =form.label :負けた, class: "winlose"
+    .style
+      =form.radio_button :style, :"スキャルピング"
+      =form.label :スキャルピング, class: "style"
+      =form.radio_button :style, :"デイトレード"
+      =form.label :デイトレード, class: "style"
+      =form.radio_button :style, :"スイングトレード"
+      =form.label :スイングトレード, class: "style"
+      =form.radio_button :style, :"長期保有"
+      =form.label :長期保有, class: "style"
     .submit
       =form.submit "投稿"

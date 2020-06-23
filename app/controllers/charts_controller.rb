@@ -14,7 +14,7 @@ class ChartsController < ApplicationController
 
   private
   def chart_params
-    params.require(:chart).permit(:name,:image,:text)
+    params.require(:chart).permit(:name,:image,:text,:winlose,:style)
   end
   
 end
