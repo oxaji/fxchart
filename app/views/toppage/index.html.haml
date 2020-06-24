@@ -20,7 +20,7 @@
           .chart__name
             =link_to chart.name, "/charts/#{chart[:id]}"
           .chart__img
-            =link_to image_tag(chart.image, size:'400x300'),"/charts/#{chart[:id]}"
+            =link_to image_tag(chart.image.url, size:'400x300'),"/charts/#{chart[:id]}"
           .chart__text
             =chart.text
           .winlose
