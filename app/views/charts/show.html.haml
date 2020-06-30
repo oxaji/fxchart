@@ -1,0 +1,25 @@
+.charts
+  .chart
+    .a
+      .chart__name
+        =@chart.name
+      .chart__img
+        =image_tag @chart.image.url,size:'400x300'
+      .chart__text
+        =@chart.text
+      .winlose
+        =@chart.winlose
+      .style
+        =@chart.style
+      .timefoot
+        時間足
+        =@chart.timefoot
+      .pair
+        通過ペア
+        =@chart.pair
+      .analyze
+        主な手法
+        =@chart.analyze
+      .profit
+        利益・損失
+        =@chart.profit

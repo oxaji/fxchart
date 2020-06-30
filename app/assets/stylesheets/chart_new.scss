@@ -1,0 +1,135 @@
+.new{
+  text-align: center;
+  margin: 0 auto;
+  width: 70%;
+  .toukou{
+    font-size: 24px;
+    background-color: rgb(49, 135, 216);
+    color: white;
+    margin: 0 auto;
+    margin-top: 20px;
+
+  }
+  .chart__name{
+    margin-top: 20px;
+    .chart__name_1{
+      position: relative;
+      right:  45%;
+    }
+    input{
+      display: block;
+      width: 100%;
+      height: 40px;
+    }
+  }
+  .chart__img{
+    margin-top: 20px;
+    .chart__img_1{
+      position: relative;
+      right: 45%;
+    }
+    input{
+      display: block;
+      width: 100%;
+      height: 40px;
+    }
+  }
+  .chart__text{
+    margin-top: 20px;
+    .chart__text_1{
+      position: relative;
+      right:  45%;
+    }
+    input{
+      display: block;
+      width: 100%;
+      height: 40px;
+    }
+  }
+  .winlose{
+    .winlose__text{
+    width: 30%;
+    margin-top: 20px;
+    background-color: rgb(49, 135, 216); 
+    color: white;
+    }
+    .winlose__content{
+      position: relative;
+      right:  35%;
+      margin-bottom: 20px;
+    }
+  }
+  .style{
+    .style__text{
+    width: 30%;
+    margin-top: 20px;
+    background-color: rgb(49, 135, 216); 
+    color: white;
+    }
+    .style__content{
+      position: relative;
+      right:  20%;
+      margin-bottom: 20px;
+    }
+  }
+  .timefoot{
+    .timefoot__text{
+    width: 30%;
+    margin-top: 20px;
+    background-color: rgb(49, 135, 216); 
+    color: white;
+    }
+    .timefoot__content{
+      width: 95%;
+      margin-bottom: 20px;
+    }
+  }
+  .pair{
+    .pair__text{
+    width: 30%;
+    margin-top: 20px;
+    background-color: rgb(49, 135, 216); 
+    color: white;
+    }
+    .pair__content{
+      position: relative;
+      right:  10%;
+      margin-bottom: 20px;
+    }
+  }
+  .analyze{
+    .analyze__text{
+      position: relative;
+      right: 45%;
+    }
+    input{
+      width: 100%;
+      margin-bottom: 20px;
+      height: 40px;
+    }
+  }
+  .profit{
+    .profit__text{
+    position: relative;
+    right: 45%;
+    margin-top: 20px;
+    }
+    input{
+      width: 100%;
+      margin-bottom: 20px;
+      height: 40px;
+    }
+  }
+  .submit{
+    display: block;
+    width: 42px;
+    margin: 0 auto;
+    border-radius: 10px;
+    // box-shadow: 3px 3px 3px gray;
+
+  }
+  .submit:active {
+    transform: translateY(6px);
+    border-bottom: none;
+  }
+}

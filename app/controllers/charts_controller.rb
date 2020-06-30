@@ -8,11 +8,13 @@ class ChartsController < ApplicationController
     Chart.create(chart_params)
   end
 
-
+  def show
+    @chart = Chart.find(params[:id])
+  end
 
   private
   def chart_params
-    params.require(:chart).permit(:name,:image,:text)
+    params.require(:chart).permit(:name,:image,:text,:winlose,:style,:timefoot,:pair,:analyze,:profit)
   end
   
 end

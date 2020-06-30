@@ -5,6 +5,12 @@ class CreateCharts < ActiveRecord::Migration[5.2]
       t.text :text
       t.text :image
       t.integer :user_id
+      t.integer :winlose
+      t.integer :style 
+      t.integer :timefoot
+      t.integer :pair
+      t.text :analyze
+      t.text :profit
       t.timestamps
     end
   end

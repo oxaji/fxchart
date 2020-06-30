@@ -8,11 +8,34 @@
   %body
     .header
       .img
-        =image_tag("https://www.photolibrary.jp/mhd3/img683/450-2019032616412746325.jpg", size: "70x60")
+        =link_to image_tag("https://www.photolibrary.jp/mhd3/img683/450-2019032616412746325.jpg", size: "70x60"),root_path
       .title
         =link_to "fxchart","/"
       .new__chart
-        =link_to "投稿", "/charts/new"
+        =link_to "自分の手法を投稿", "/charts/new"
+      .fukidashi 自分の試した手法を投稿する<br> 勝った、負けたは関係ありません　<br>負けた場合であっても <br>復習や負けた要因を<br>考えることができます
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
     = yield
+    .fooder
+      .line
+      .content
+        .titles
+          .img
+            =link_to image_tag("https://www.photolibrary.jp/mhd3/img683/450-2019032616412746325.jpg", size: "70x60"),root_path
+          .title
+            =link_to "fxchart","/"
+        .homeranking
+          .home
+            =link_to "Home", "/"
+          .ranking
+            =link_to "Ranking", "/"
+        .guideprofile
+          .guide
+            =link_to "Guide", "/"
+          .profile
+            =link_to "Profile", "/"
+        .copy
+          Copyright © 2020 FXchart All Rights Reserved.
+
+
