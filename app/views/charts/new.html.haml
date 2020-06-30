@@ -76,30 +76,28 @@
         =form.label :ポンド／円, class: "pair" 
         =form.radio_button :pair, :"豪ドル/円"
         =form.label :豪ドル／円, class: "pair" 
-        %br
         =form.radio_button :pair, :"NZドル/円"
         =form.label :NZドル／円, class: "pair" 
         =form.radio_button :pair, :"カナダドル/円"
         =form.label :カナダドル／円, class: "pair" 
         =form.radio_button :pair, :"スイスフラン/円"
         =form.label :スイスフラン／円, class: "pair" 
+        %br
         =form.radio_button :pair, :"ユーロ/米ドル"
         =form.label :ユーロ／米ドル, class: "pair" 
-        %br
         =form.radio_button :pair, :"ポンド/米ドル"
         =form.label :ポンド／米ドル, class: "pair" 
         =form.radio_button :pair, :"豪ドル/米ドル"
         =form.label :豪ドル／米ドル, class: "pair" 
         =form.radio_button :pair, :"NZドル/米ドル"
         =form.label :NZドル／米ドル, class: "pair" 
-        %br
         =form.radio_button :pair, :"カナダドル/米ドル"
         =form.label :カナダドル／米ドル, class: "pair" 
         =form.radio_button :pair, :"ユーロ/ポンド"
         =form.label :ユーロ／ポンド, class: "pair" 
+        %br
         =form.radio_button :pair, :"ユーロ/豪ドル"
         =form.label :ユーロ／豪ドル, class: "pair" 
-        %br
         =form.radio_button :pair, :"ユーロ/NZドル"
         =form.label :ユーロ／NZドル, class: "pair" 
         =form.radio_button :pair, :"ユーロ/スイスフラン"
@@ -116,6 +114,7 @@
     .profit
       .profit__text
         利益or損失
-      =form.text_field :profit, placeholder:"利益・損失"
+      .profit__content
+        =form.text_field :profit, placeholder:"利益・損失"
     .submit
       =form.submit "投稿"
