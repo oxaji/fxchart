@@ -1,4 +1,5 @@
 class Chart < ApplicationRecord
+  has_many :likes, dependent: :destroy
 
   def check_image
      !['.jpg', '.png', '.gif'].include?(File.extname(name).downcase)

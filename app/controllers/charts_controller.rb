@@ -10,6 +10,8 @@ class ChartsController < ApplicationController
 
   def show
     @chart = Chart.find(params[:id])
+    @like = Like.new
+    @likes_count = Like.where(chart_id: @chart.id).count
   end
 
   private

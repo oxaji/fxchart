@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_06_19_083901) do
+ActiveRecord::Schema.define(version: 2020_07_04_032628) do
 
   create_table "charts", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name"
@@ -27,4 +27,13 @@ ActiveRecord::Schema.define(version: 2020_06_19_083901) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "likes", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.bigint "chart_id"
+    t.string "ip"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["chart_id"], name: "index_likes_on_chart_id"
+  end
+
+  add_foreign_key "likes", "charts"
 end
