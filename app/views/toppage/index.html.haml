@@ -23,6 +23,7 @@
             =link_to image_tag(chart.image.url, size:'400x300'),"/charts/#{chart[:id]}"
           .chart__text
             =chart.text
-          .winlose
-            =chart.winlose
+          .likecount
+            いいね数：
+            = @likes_count
 = paginate @charts

@@ -1,3 +1,4 @@
+= flash[:notice]
 .charts
   .chart
     .a
@@ -23,3 +24,8 @@
       .profit
         利益・損失
         =@chart.profit
+      .like 
+        = button_to "いいね", chart_likes_path(@chart)
+      .likecount
+        いいね数
+        = @likes_count

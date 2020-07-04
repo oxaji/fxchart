@@ -2,6 +2,7 @@ class ToppageController < ApplicationController
 
   def index
     @charts = Chart.all.page(params[:page]).per(6)
+    @likes_count = Like.count
   end
 
   def new
