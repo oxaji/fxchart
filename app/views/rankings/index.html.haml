@@ -1,0 +1,15 @@
+- @all_ranks.each.with_index(1) do |chart,i|
+  .rank
+    第
+    =i
+    位
+  .a
+    .chart__name
+      =link_to chart.name, "/charts/#{chart[:id]}"
+    .chart__img
+      =link_to image_tag(chart.image.url, size:'400x300'),"/charts/#{chart[:id]}"
+    .chart__text
+      =chart.text
+    .likecount
+      いいね数：
+      = @likes_count
