@@ -4,5 +4,8 @@ Rails.application.routes.draw do
   resources :profiles, only: [:index]
   resources :charts, only: [:index, :new, :create, :show] do
     resources :likes, only: [:create, :destroy]
+      collection do
+        get :search
+      end
   end
 end

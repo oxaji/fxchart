@@ -25,4 +25,13 @@ class Chart < ApplicationRecord
     "米ドル/円":1, "ユーロ/円":2, "ポンド/円":3, "豪ドル/円":4, "NZドル/円":5, "カナダドル/円":6, "スイスフラン/円":7, "ユーロ/米ドル":8, "ポンド/米ドル":9, "豪ドル/米ドル":10, "NZドル/米ドル":11, "カナダドル/米ドル":12, "ユーロ/ポンド":13, "ユーロ/豪ドル":14, "ユーロ/NZドル":15, "ユーロ/スイスフラン":16, "ポンド/豪ドル":17, "豪ドル/NZドル":18, "その他通過ペア":19
   }
   mount_uploader :image, ImageUploader
+
+  def self.search(search)
+    if search
+      Chart.where(['name LIKE ?', "%#{search}%"])
+    else
+      Chart.all
+    end
+  end
+
 end

@@ -14,6 +14,10 @@ class ChartsController < ApplicationController
     @likes_count = Like.where(chart_id: @chart.id).count
   end
 
+  def search
+    @charts = Chart.search(params[:keyword])
+  end
+
   private
   def chart_params
     params.require(:chart).permit(:name,:image,:text,:winlose,:style,:timefoot,:pair,:analyze,:profit)
