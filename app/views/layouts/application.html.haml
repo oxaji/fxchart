@@ -11,6 +11,10 @@
         =link_to image_tag("https://www.photolibrary.jp/mhd3/img683/450-2019032616412746325.jpg", size: "70x60"),root_path
       .title
         =link_to "fxchart","/"
+      .search
+        = form_with(url:search_charts_path, method: :get, local: true) do |f|
+          = f.text_field :keyword, placeholder: 'キーワード検索'
+          = f.submit '検索'
       .new__chart
         =link_to "自分の手法を投稿", "/charts/new"
       .fukidashi 自分の試した手法を投稿する<br> 勝った、負けたは関係ありません　<br>負けた場合であっても <br>復習や負けた要因を<br>考えることができます

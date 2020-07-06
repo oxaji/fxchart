@@ -16,7 +16,8 @@ default: &default
   username: root
   password:
   socket: /tmp/mysql.sock
-
+  host: oxaji0306.local
+  
 development:
   <<: *default
   database: fxchart_development
