@@ -16,7 +16,6 @@ default: &default
   username: root
   password:
   socket: /tmp/mysql.sock
-  host: arcane-coast-68664
   
 development:
   <<: *default
