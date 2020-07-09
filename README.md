@@ -1,24 +1,33 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# プロジェクトタイトル
+Fxchart
 
-Things you may want to cover:
+## 概要
+FXの手法とその都度成功した時と失敗した時を復習できる投稿サイト、また人の手法をその都度参考にできるサイトが無かったので作りました。FXのチャートをスクショして、その手法が成功したとき、または失敗したときに復習を行うことができます。また、人の手法をみることができるので手法作りの参考にすることもできます。
 
-* Ruby version
+***デモ***
 
-* System dependencies
 
-* Configuration
+## 機能
+- 機能1 投稿機能
+- 機能2 いいね機能
+- 機能3 ランキング機能
+- 機能4 検索機能
 
-* Database creation
+## 使い方
+1.自分の手法を投稿から画像つきで投稿を行います
+2.投稿した物はトップページに新しい順に表示されます
+3.いいねを押すことができ、いいねが多い順にRankingで表示されます
+4.タイトルか画像をクリックすると詳細ページに飛び詳しい情報をみることができます
+5.検索機能はあいまい検索で一部が一致しているところを検索できます
+  トップページと同様に詳細ページに飛ぶことができます
 
-* Database initialization
+## インストール
+$ git clone https://github.com/oxaji/fxchart
 
-* How to run the test suite
+## 作者
+mail to: s76.ozaki.fumiya@gmail.com
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## デプロイ
+https://topchart2.herokuapp.com/
