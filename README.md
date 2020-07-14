@@ -66,6 +66,8 @@ ruby '2.5.1'
 - has_many :likes
 
 ## likesテーブル
+|Column|Type|Options|
+|------|----|-------|
 |chart_id|integer|null: false|
 |ip|integer|null: false|
 
