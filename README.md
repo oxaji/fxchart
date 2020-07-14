@@ -31,3 +31,43 @@ mail to: s76.ozaki.fumiya@gmail.com
 
 ## デプロイ
 https://topchart2.herokuapp.com/
+
+## 工夫したポイント
+・トップページに目を引くタイトルをつけたかったため、cssでアニメーションをつけました
+
+・トップページを新規投稿順に並べ、ランキングはいいねが多い順に並べ、検索機能で自分の調べたいキーワードを表示させました
+
+・ユーザーログイン機能をつけなかったため、いいねをIPアドレスで管理し、何回も同じパソコンでいいねを押せないようにしました
+
+## 開発環境
+ruby '2.5.1'
+
+## 課題・今度実装したい機能
+・jquery validationが上手く機能しませんでした
+
+・当初の予定では保有期間でそれぞれランキング機能を搭載する予定でした
+
+## DB設計
+
+## chartsテーブル
+|Column|Type|Options|
+|------|----|-------|
+|name|text|null: false|
+|text|text|null: false|
+|image|text|null: false|
+|winlose|integer|null: false|
+|style|integer|null: false|
+|timefoot|integer|null: false|
+|pair|integer|null: false|
+|analyze|text|null: false|
+|profit|text|null: false|
+
+### Association
+- has_many :likes
+
+## likesテーブル
+|chart_id|integer|null: false|
+|ip|integer|null: false|
+
+### Association
+- belongs_to :charts
